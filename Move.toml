@@ -1,0 +1,9 @@
+[package]
+name = 'aptos_fungible_token'
+version = '1.0.0'
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+[addresses]
+admin="75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d"

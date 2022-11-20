@@ -1,0 +1,86 @@
+ippolit@MacBook-Pro-ippolit ~/Dapps/aptos/token % aptos move publish
+Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING token
+package size 2177 bytes
+Do you want to submit a transaction for a range of [702900 - 1054300] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x6c6cb6a289f4dc471e05b828d036adf919912c5f3cec7c6f3f3b258903a9d4bf",
+    "gas_used": 7029,
+    "gas_unit_price": 100,
+    "sender": "75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d",
+    "sequence_number": 0,
+    "success": true,
+    "timestamp_us": 1668690749563173,
+    "version": 1400615,
+    "vm_status": "Executed successfully"
+  }
+}
+
+ippolit@MacBook-Pro-ippolit ~/Dapps/aptos/token % aptos move run --function-id 75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d::token3::mint --args address:75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d u64:3000000
+Do you want to submit a transaction for a range of [53300 - 79900] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x53bfbe7cbc15a9bbe1f96e687117a4c7be846d98e3867bb8a19d9ae679c0a8ab",
+    "gas_used": 533,
+    "gas_unit_price": 100,
+    "sender": "75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d",
+    "sequence_number": 7,
+    "success": true,
+    "timestamp_us": 1668694987949484,
+    "version": 1440390,
+    "vm_status": "Executed successfully"
+  }
+}
+
+
+ippolit@MacBook-Pro-ippolit ~/Dapps/aptos/token % aptos move run --function-id 75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d::token4::register --private-key 0x1ab035af69f3c5b73d5590d8acb999cd75d639d4efcf80416cd0d71345fc6463
+Do you want to submit a transaction for a range of [96300 - 144400] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0xb3bb133895c4ce77a3faf8f2226090f19c102246c996d58461e3208e771fef1a",
+    "gas_used": 997,
+    "gas_unit_price": 100,
+    "sender": "098e1724e07c2db58bc7ce75df079d2e20daf5b7e8af852c9ec88197ec809ba0",
+    "sequence_number": 0,
+    "success": true,
+    "timestamp_us": 1668697626346650,
+    "version": 1468272,
+    "vm_status": "Executed successfully"
+  }
+}
+
+ippolit@MacBook-Pro-ippolit ~/Dapps/aptos/token % aptos move run --function-id 75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d::token4::mint --args address:75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d u64:3000000
+Do you want to submit a transaction for a range of [52800 - 79200] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x781c765f6bd07d7a2d1343dc210fc6bd820ac7779e07b4716539d6f3d2a25381",
+    "gas_used": 528,
+    "gas_unit_price": 100,
+    "sender": "75703b7a12db0ab2fdff142febd1119b9902e4a5b94c1561c7dfdbc2c1fde60d",
+    "sequence_number": 10,
+    "success": true,
+    "timestamp_us": 1668697477245386,
+    "version": 1466775,
+    "vm_status": "Executed successfully"
+  }
+}
+
+{
+    "function": "0x1::code::publish_package_txn",
+    "type_arguments": [],
+    "arguments": [
+      "0x06746...c696200",
+      [
+        "0xa11ceb...9010900"
+      ]
+    ],
+    "type": "entry_function_payload"
+  }
